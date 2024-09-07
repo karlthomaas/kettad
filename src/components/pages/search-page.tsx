@@ -69,7 +69,7 @@ export const SearchPage = ({ results }: { results: DiscType[] }) => {
         <Input
           value={search}
           onChange={handleSearch}
-          className='h-[50px] w-full rounded-xl bg-card sm:w-full'
+          className='h-[50px] w-full rounded-xl bg-card text-lg sm:w-full'
           placeholder='Search disc'
         />
         <h3 className='text-sm text-muted-foreground'>{totalDiscsCount} discs found</h3>
