@@ -14,9 +14,7 @@ export async function generateStaticParams() {
   const data: DiscType[] = await fetchDiscs()
 
   return data.map((disc) => ({
-    params: {
-      slug: disc.name_slug,
-    },
+    slug: disc.name_slug,
   }))
 }
 
